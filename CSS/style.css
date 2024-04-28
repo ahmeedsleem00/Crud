@@ -1,0 +1,22 @@
+body 
+{
+    background-image: url(../images/black-friday-elements-assortment.jpg);
+    background-size: cover;
+    background-position: 100% 100%;
+    background-attachment: fixed;
+
+    font-family: cursive;
+    color: #fff;
+   
+    
+}
+
+.product
+{
+    background-color: rgba(0, 0, 0, 0.418) ;
+    
+}
+
+
+
+

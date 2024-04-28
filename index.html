@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>CRUD System</title>
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/all.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
+
+
+</head>
+
+<body>
+
+
+
+
+ 
+  <div class="product w-50 m-auto my-3 p-3  shadow-lg rounded-5 ">
+
+    <h1 class="my-3 d-flex justify-content-center align-items-center  "> Product Managment System</h1>
+
+    <label for="productName">Product Name :</label>
+    <input id="productName" type="text" class="my-3 form-control" placeholder="Enter Product Name">
+    
+    <label for="productCategory">Product Category :</label>
+    <input id="productCategory" type="text" class="my-3 form-control" placeholder="Enter Product Category">
+    
+    <label for="productPrice">Product Price :</label>
+    <input id="productPrice" type="number" class="my-3 form-control" placeholder="Enter Product Price">
+  
+    <label for="productDesc">Product Description :</label>
+    <textarea  id="productDesc" class="form-control my-3" cols="20" rows="4" placeholder="Enter Product Description"></textarea>
+
+    
+    <div class="w-50 m-auto my-3 ">
+
+      <button id="mainBtn" onclick="getInputsData ()" class="my-3  w-100 btn btn-dark ">
+        <i class="fa-solid fa-circle-plus mx-1 py-3"></i>
+         Add Product 
+        </button>
+      <button id="updateBtn" onclick="updateThisProduct()" class="my-3 w-100 btn btn-secondary d-none">
+        <i class="fa-solid fa-pen-to-square mx-1"></i>
+        Update Product 
+      </button>
+
+      <label for="">Search by Product Name :</label>
+      <input onkeyup="searchProduct(this.value)" type="text" class="form-control my-3 mt-3 shadow" placeholder=" Search">
+
+      <label for=""> Clear All Products  :</label>
+      <button onclick="deleteAllItems ()" class="my-3 w-100 btn btn-outline-light"> Clear All Products </button>
+    </div>
+
+
+  
+  
+  </div>
+
+  <div class="container text-center my-5 form-control-lg">
+
+    <table class="table">
+
+      <thead>
+
+        <th>Index</th>
+        <th>Product Name</th>
+        <th>Product Category</th>
+        <th>Product Price</th>
+        <th>Product Description</th>
+        <th>Delete</th>
+        <th>Update</th>
+      </thead>
+
+      <tbody id="tbody">
+
+      
+      </tbody>
+
+    </table>
+
+  </div>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
